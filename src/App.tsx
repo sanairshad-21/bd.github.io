@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import {MainPageDisplay} from './components/mainPage';
 
-const pandaPicture = '/assets/panda.png'
-const fallingPanda = '/assets/falling-panda.png'
+const pandaPicture = './assets/panda.png'
+const fallingPanda = './assets/falling-panda.png'
 function App() {
   return (
     <div className="App" style={{backgroundColor: '#f4c2c2'}}>
