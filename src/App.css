@@ -1,0 +1,264 @@
+.App {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f4c2c2;
+}
+
+.date-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 7vh;
+  font-family: Black Vosten Personal Use;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.date {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20%;
+  margin: 10%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.panda-picture {
+  position: fixed;
+  top: 50%;
+  /* transform: translate(0,-50%); */
+  width: 60vh;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.falling-picture {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* transform: translate(0,-50%); */
+  width: 50vh;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.Center-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: fit-content;
+  animation-name: bounceContainer;
+  animation-iteration-count: 3;
+  animation-duration: 0.75s;
+  animation-delay: 0.25s;
+}
+
+
+@keyframes bounceContainer {
+0%, 100%{transform: translateY(0) translate(-50%,-50%);}
+50%{transform: translateY(-10px) translate(-50%,-50%);}
+}
+
+
+
+.Circle-div {
+  /* background: #98E0C4; */
+  background: rgb(0 0 0 / 0);
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  border: 3px solid black;
+
+  /* box-shadow: 0px -1px 9px 5px rgb(0 0 0 / 0.7); */
+}
+
+.circle-div-selected {
+  background-color: #a5cac6;
+  box-shadow: 0px -1px 9px 5px rgb(0 0 0 / 0.7);
+}
+
+.Circle-div:hover {
+  /* #02162e */
+  background-color: #a5cac6;
+  box-shadow: 0px -1px 9px 5px rgb(0 0 0 / 0.7);
+
+  animation-name: bounce;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+} 
+
+@keyframes bounce {
+ 0%, 100%{transform: translateY(0);}
+ 50%{transform: translateY(-10px);}
+}
+.project-image {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.my-picture {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 20%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.blur2 {
+  transform: translate(0%, -46%);
+  opacity: 0.5;
+  filter: blur(10px);
+}
+.blur1 {
+  transform: translate(0%, -48%);
+  opacity: 0.75;
+  filter: blur(10px);
+}
+.border-picture {
+  width: 21%;
+  filter: blur(10px) brightness(0);
+  transform: translate(-2%, -49%);
+  
+}
+.close-emoji {
+  margin: auto;  
+  filter: grayscale(6);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  padding-left: 5%;
+  font-size: 2vw;
+  font-weight: 350;
+}
+
+.main-container {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+.name-title {
+  position: absolute;
+  left: 38%;
+  top: 8%;
+  user-select: none;
+  -webkit-user-drag: none;
+  font-family: Black Vosten Personal Use;
+}
+
+@font-face {
+  font-family: Black Vosten Personal Use;
+  src: url('./black-font.ttf') format("truetype");
+}
+.main-body-name {
+  margin: 0;
+  margin-top: -10%;
+  margin-left: -4%;
+  font-weight: 250;
+  font-size: 2.5vw;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.greeting-title {
+  font-weight: 350;
+  margin: 0;
+
+  /* top: -10%; */
+  font-size: 10vw;
+}
+
+#rotated-arrow-main {
+  top: 0%;
+  position: absolute;
+  left: 14%;
+  width: 16%;
+  transform: rotate(180deg) translate(-50%,-40%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#up-arrow-main {
+  top: 78%;
+  position: fixed;
+  width: 20%;
+  height: 20%;
+  max-width: 200px;
+  left: 44%;
+  transform: scaleX(-1) translate(-50%,-50%);
+}
+.main-text-container {
+  position: fixed;
+  right:15%;
+  top: 58%;
+  font-family: Black Vosten Personal Use;
+  max-width: 20%;
+}
+.main-text-projects{
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
