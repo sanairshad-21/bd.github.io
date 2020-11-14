@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8317ce547c7343bfcf61688ea03f5d69",
+    "revision": "9870da22696bf594100946ebf3bb3375",
     "url": "/bd.github.io/index.html"
   },
   {
-    "revision": "d7bc00164bbd5eb81ada",
-    "url": "/bd.github.io/static/css/main.91872e09.chunk.css"
+    "revision": "915a2f3d870a5f68c868",
+    "url": "/bd.github.io/static/css/main.eca37942.chunk.css"
   },
   {
     "revision": "094dc2bdccf2deeb7427",
@@ -16,15 +16,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bd.github.io/static/js/2.e2f82d03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7bc00164bbd5eb81ada",
-    "url": "/bd.github.io/static/js/main.529f83f4.chunk.js"
+    "revision": "915a2f3d870a5f68c868",
+    "url": "/bd.github.io/static/js/main.31a39440.chunk.js"
   },
   {
     "revision": "225fdffa5f74e2fe3ac9",
     "url": "/bd.github.io/static/js/runtime-main.b5435d9a.js"
-  },
-  {
-    "revision": "8628078e0b11009e066913bd76f189ff",
-    "url": "/bd.github.io/static/media/black-font.8628078e.ttf"
   }
 ]);
