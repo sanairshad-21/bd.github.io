@@ -5,7 +5,7 @@ export const MainPageDisplay = (): any => {
     const [hours, setHours] = useState(0)
     const [mins, setMins] = useState(0)
     const [secs, setSecs] = useState(0)
-
+    const isBreak = true;
     let interval = useRef<any>();
 
     const startTimer = () => {
@@ -37,6 +37,13 @@ export const MainPageDisplay = (): any => {
             clearInterval(interval.current);
         }
     })
+    if(isBreak) {
+       return(
+        <div className="main-container">
+            <h1 style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)'}}>Will be back shortly 😉</h1>
+        </div>
+       ) 
+    }
     return (
         <div className="main-container">
             <div className='date-container'>
